@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Rates - Nova Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <nav class="bg-white shadow py-4">
+        <div class="container mx-auto px-6">
+            <a href="HPP.html" class="flex items-center gap-2 text-blue-600 text-xl font-bold">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-12 max-w-4xl">
+        <h1 class="text-3xl font-bold mb-8">Current Interest Rates</h1>
+        
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-100 border-b border-gray-200 text-gray-600 text-sm uppercase">
+                        <th class="p-4 font-semibold">Account Type</th>
+                        <th class="p-4 font-semibold">APY*</th>
+                        <th class="p-4 font-semibold">Min. Balance</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">Standard Checking</td>
+                        <td class="p-4 text-green-600 font-bold">0.05%</td>
+                        <td class="p-4">$0</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">Nova Savings</td>
+                        <td class="p-4 text-green-600 font-bold">4.50%</td>
+                        <td class="p-4">$0</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">Money Market</td>
+                        <td class="p-4 text-green-600 font-bold">4.65%</td>
+                        <td class="p-4">$10,000</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">12-Month CD</td>
+                        <td class="p-4 text-green-600 font-bold">5.00%</td>
+                        <td class="p-4">$1,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="p-4 bg-gray-50 text-xs text-gray-500">
+                *APY = Annual Percentage Yield. Rates are subject to change.
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <a href="open-account.html" class="text-blue-600 font-bold hover:underline">Open an account today &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

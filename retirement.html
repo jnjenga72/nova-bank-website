@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retirement Planning - Nova Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white font-sans text-gray-800">
+    <nav class="bg-white shadow py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center gap-6">
+                <a href="HPP.html" class="text-gray-500 hover:text-teal-600 transition font-medium"><i class="fas fa-arrow-left mr-2"></i>Back</a>
+                <a href="HPP.html" class="flex items-center gap-2 text-teal-600 text-xl font-bold">
+                    <i class="fas fa-seedling"></i> Nova Wealth
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-teal-700 text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-5xl font-bold mb-6">Invest in your future self.</h1>
+                <p class="text-xl text-teal-100 mb-8">Whether you are starting late or starting young, our automated tools make retirement planning simple.</p>
+                <button onclick="alert('Investment planning tool loading...')" class="bg-white text-teal-800 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Create Investment Plan</button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <i class="fas fa-chart-pie text-9xl text-teal-500 opacity-50"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Investment Options</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 border rounded-xl hover:shadow-lg transition">
+                <h3 class="text-2xl font-bold mb-4 text-teal-700">Traditional IRA</h3>
+                <p class="text-gray-600 mb-4">Contribute pre-tax dollars to lower your taxable income today. Your money grows tax-deferred until retirement.</p>
+                <ul class="text-sm text-gray-500 list-disc ml-5">
+                    <li>Tax deduction eligibility</li>
+                    <li>Tax-deferred growth</li>
+                    <li>Required distributions at age 73</li>
+                </ul>
+            </div>
+            <div class="p-8 border rounded-xl hover:shadow-lg transition">
+                <h3 class="text-2xl font-bold mb-4 text-teal-700">Roth IRA</h3>
+                <p class="text-gray-600 mb-4">Contribute after-tax dollars. Your money grows tax-free and withdrawals in retirement are tax-free.</p>
+                <ul class="text-sm text-gray-500 list-disc ml-5">
+                    <li>Tax-free withdrawals</li>
+                    <li>No age limit for contributions</li>
+                    <li>Flexible withdrawal rules</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - Nova Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="HPP.html" class="flex items-center gap-2">
+                <i class="fas fa-university text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-800">Nova Bank</span>
+            </a>
+            <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <a href="about.html" class="text-blue-600 font-bold">About</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="support.html" class="hover:text-blue-600 transition">Support</a>
+            </div>
+            <a href="login.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">
+                Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 bg-blue-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-800 opacity-50">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="rgba(255,255,255,0.05)"/>
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Reimagining How You Bank</h1>
+            <p class="text-xl text-blue-200 max-w-2xl mx-auto mb-10">
+                We are building a financial future where technology meets trust. Discover how Nova Bank is changing the game.
+            </p>
+        </div>
+    </header>
+
+    <!-- Our Services -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Comprehensive Financial Solutions</h2>
+                <p class="text-gray-600">Everything you need to manage, save, and grow your money.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-wallet text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Checking Accounts</h3>
+                    <p class="text-gray-600 mb-4">Fee-free checking with early direct deposit and overdraft protection up to $200.</p>
+                    <a href="view-rates.html" class="text-blue-600 font-bold hover:underline">View Rates &rarr;</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-piggy-bank text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">High-Yield Savings</h3>
+                    <p class="text-gray-600 mb-4">Earn up to 4.5% APY on your savings with no minimum balance requirements.</p>
+                    <a href="savings.html" class="text-blue-600 font-bold hover:underline">Start Saving &rarr;</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-briefcase text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Business Banking</h3>
+                    <p class="text-gray-600 mb-4">Tools built for scale. Manage payroll, expenses, and invoicing all in one place.</p>
+                    <a href="business.html" class="text-blue-600 font-bold hover:underline">For Business &rarr;</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-home text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Home Loans</h3>
+                    <p class="text-gray-600 mb-4">Competitive mortgage rates and refinancing options to help you buy your dream home.</p>
+                    <a href="mortgage-calculator.html" class="text-blue-600 font-bold hover:underline">Calculate Mortgage &rarr;</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-credit-card text-4xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Credit Cards</h3>
+                    <p class="text-gray-600 mb-4">Earn 3% cash back on dining and travel, and 1.5% on everything else.</p>
+                    <a href="credit-cards.html" class="text-blue-600 font-bold hover:underline">Compare Cards &rarr;</a>
+                </div>
+                <!-- Card 6 -->
+                <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition bg-white">
+                    <i class="fas fa-university text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Retirement Planning</h3>
+                    <p class="text-gray-600 mb-4">IRAs and investment portfolios managed by experts to secure your future.</p>
+                    <a href="retirement.html" class="text-blue-600 font-bold hover:underline">Plan Ahead &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">Is Nova Bank FDIC insured?</h3>
+                    <p class="text-gray-600">Yes, all deposits are FDIC insured up to $250,000 per depositor, providing you with full peace of mind.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">Are there any hidden fees?</h3>
+                    <p class="text-gray-600">No. We pride ourselves on transparency. There are no monthly maintenance fees, minimum balance fees, or foreign transaction fees.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">How do I access my account?</h3>
+                    <p class="text-gray-600">You can access your account 24/7 via our mobile app (iOS and Android) or through our secure web dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="py-16 bg-blue-600 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Ready to get started?</h2>
+            <p class="mb-8 text-blue-100">It only takes a few minutes to join Nova Bank.</p>
+            <a href="open-account.html" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">Open an Account</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">&copy; 2026 Nova Bank Corporation. All rights reserved.</p>
+            <div class="flex justify-center gap-6">
+                <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white">Terms of Service</a>
+                <a href="contact.html" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

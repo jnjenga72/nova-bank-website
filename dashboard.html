@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Nova Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-university text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-800">Nova Bank</span>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <!-- Notifications -->
+                <button onclick="alert('You have 2 new notifications:\n1. Statement available\n2. New login detected')" class="relative text-gray-500 hover:text-blue-600 transition">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                </button>
+                
+                <!-- User Profile -->
+                <div class="flex items-center gap-3 border-l pl-6 border-gray-200">
+                    <div class="text-right hidden md:block">
+                        <p class="text-sm font-bold leading-tight">Alex Johnson</p>
+                        <p class="text-xs text-gray-500">Premium Member</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold border border-blue-200">
+                        AJ
+                    </div>
+                    <a href="HPP.html" class="ml-2 text-gray-400 hover:text-red-500 transition" title="Sign Out">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8">
+        <!-- Header -->
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">Overview</h1>
+                <p class="text-gray-500">Welcome back, here's what's happening with your accounts.</p>
+            </div>
+            <button onclick="alert('Downloading Monthly Report...')" class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition shadow">
+                <i class="fas fa-download mr-2"></i> Download Report
+            </button>
+        </div>
+
+        <!-- Account Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Total Balance (Featured) -->
+            <div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-xl p-6 text-white shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i class="fas fa-wallet text-9xl transform rotate-12 translate-x-4 -translate-y-4"></i>
+                </div>
+                <div class="relative z-10">
+                    <p class="text-blue-200 text-sm font-medium mb-1">Total Balance</p>
+                    <h2 class="text-3xl font-bold mb-4">$42,593.00</h2>
+                    <div class="flex items-center gap-2 text-sm bg-white/10 w-fit px-3 py-1 rounded-full backdrop-blur-sm">
+                        <i class="fas fa-arrow-up text-green-400"></i>
+                        <span>+$1,240.50 (3.2%)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checking -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-lg">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400">**** 4829</span>
+                </div>
+                <p class="text-gray-500 text-sm">Checking Account</p>
+                <h3 class="text-2xl font-bold text-gray-800">$5,230.50</h3>
+            </div>
+
+            <!-- Savings -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 text-lg">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400">**** 9921</span>
+                </div>
+                <p class="text-gray-500 text-sm">Savings Account</p>
+                <h3 class="text-2xl font-bold text-gray-800">$37,362.50</h3>
+            </div>
+        </div>
+
+        <!-- Lower Section Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Recent Transactions -->
+            <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Recent Transactions</h3>
+                    <a href="transactions.html" class="text-blue-600 text-sm font-semibold hover:underline">View All</a>
+                </div>
+                <div class="divide-y divide-gray-50">
+                    <!-- Transaction Item -->
+                    <div class="p-4 flex items-center justify-between hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-500">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-sm">Amazon Purchase</p>
+                                <p class="text-xs text-gray-500">Today, 2:30 PM</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-gray-800">-$120.50</span>
+                    </div>
+
+                    <!-- Transaction Item -->
+                    <div class="p-4 flex items-center justify-between hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-sm">Direct Deposit - Tech Corp</p>
+                                <p class="text-xs text-gray-500">Yesterday, 9:00 AM</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-green-600">+$3,250.00</span>
+                    </div>
+                    
+                    <!-- Transaction Item -->
+                    <div class="p-4 flex items-center justify-between hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-sm">Starbucks Coffee</p>
+                                <p class="text-xs text-gray-500">Yesterday, 8:15 AM</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-gray-800">-$5.40</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Transfer Widget -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-fit">
+                <h3 class="font-bold text-gray-800 mb-6 text-lg">Quick Transfer</h3>
+                
+                <!-- Recent Contacts -->
+                <div class="flex gap-4 mb-6 overflow-x-auto pb-2 scrollbar-hide">
+                    <div onclick="alert('Add New Contact feature coming soon!')" class="flex flex-col items-center min-w-[60px] cursor-pointer group">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 group-hover:border-blue-500 group-hover:text-blue-500 transition mb-2">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <span class="text-xs font-medium text-gray-500">New</span>
+                    </div>
+                    <div onclick="document.getElementById('transfer-amount').focus()" class="flex flex-col items-center min-w-[60px] cursor-pointer">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+W&background=random" class="w-12 h-12 rounded-full mb-2 border-2 border-transparent hover:border-blue-500 transition">
+                        <span class="text-xs font-medium text-gray-600">Sarah</span>
+                    </div>
+                    <div onclick="document.getElementById('transfer-amount').focus()" class="flex flex-col items-center min-w-[60px] cursor-pointer">
+                        <img src="https://ui-avatars.com/api/?name=Mike+T&background=random" class="w-12 h-12 rounded-full mb-2 border-2 border-transparent hover:border-blue-500 transition">
+                        <span class="text-xs font-medium text-gray-600">Mike</span>
+                    </div>
+                </div>
+
+                <!-- Transfer Input -->
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 mb-1 uppercase">Amount</label>
+                        <div class="relative">
+                            <span class="absolute left-3 top-3 text-gray-500 font-bold">$</span>
+                            <input id="transfer-amount" type="number" class="w-full bg-gray-50 border border-gray-200 rounded-lg py-2.5 pl-7 pr-4 focus:outline-none focus:border-blue-500 focus:bg-white font-bold text-gray-800 transition" placeholder="0.00">
+                        </div>
+                    </div>
+                    <button onclick="alert('Money sent successfully!')" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                        <span>Send Money</span>
+                        <i class="fas fa-paper-plane text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

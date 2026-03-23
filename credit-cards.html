@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Cards - Nova Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+    <nav class="bg-white shadow py-4 mb-8">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="HPP.html" class="text-gray-500 hover:text-blue-600 transition font-medium"><i class="fas fa-arrow-left mr-2"></i>Back</a>
+                <span class="flex items-center gap-2 text-blue-600 text-xl font-bold">
+                    <i class="fas fa-credit-card"></i> Nova Cards
+                </span>
+            </div>
+            <a href="login.html" class="text-blue-600 font-bold">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold text-center mb-12">Find the right card for you</h1>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Basic Card -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="bg-gray-50 h-56 flex items-center justify-center p-4">
+                    <!-- Silver Card (Basic) -->
+                    <div class="w-72 h-44 bg-gradient-to-br from-gray-300 to-gray-400 rounded-xl shadow-2xl relative p-6 text-gray-800 flex flex-col justify-between transform transition hover:scale-105 duration-300">
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-2"><i class="fas fa-university text-lg"></i><span class="font-bold tracking-widest text-sm">NOVA BANK</span></div>
+                            <span class="text-xs font-bold border border-gray-600 px-2 rounded">DEBIT</span>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 mb-2"><div class="w-10 h-8 bg-yellow-200/50 rounded-md border border-yellow-300"></div><i class="fas fa-wifi rotate-90 opacity-50"></i></div>
+                            <p class="font-mono text-lg tracking-widest mb-1">4000 1234 5678 9010</p>
+                            <div class="flex justify-between items-end"><span class="text-xs font-bold">MEMBER SINCE 2023</span><i class="fab fa-cc-visa text-3xl opacity-80"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">Nova Essential</h3>
+                    <p class="text-gray-500 mb-6">No annual fee. Simple rewards.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> 1.5% Cash back on everything</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> No foreign transaction fees</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> $0 Annual Fee</li>
+                    </ul>
+                    <button onclick="alert('Online applications are currently disabled. Please visit your nearest Nova Bank branch to apply.')" class="w-full border-2 border-blue-600 text-blue-600 font-bold py-2 rounded-lg hover:bg-blue-50 transition">Visit Branch to Apply</button>
+                </div>
+            </div>
+
+            <!-- Preferred Card (Highlighted) -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-500 transform md:-translate-y-4">
+                <div class="bg-blue-50 h-56 flex items-center justify-center p-4 relative">
+                    <span class="absolute top-4 right-4 bg-yellow-400 text-blue-900 text-xs font-bold px-2 py-1 rounded">MOST POPULAR</span>
+                    <!-- Blue Card (Preferred) -->
+                    <div class="w-72 h-44 bg-gradient-to-br from-blue-700 to-blue-900 rounded-xl shadow-2xl relative p-6 text-white flex flex-col justify-between transform transition hover:scale-105 duration-300">
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-2"><i class="fas fa-university text-lg text-blue-300"></i><span class="font-bold tracking-widest text-sm">NOVA BANK</span></div>
+                            <span class="text-xs font-bold border border-blue-400 px-2 rounded">PREFERRED</span>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 mb-2"><div class="w-10 h-8 bg-yellow-200/80 rounded-md"></div><i class="fas fa-wifi rotate-90 opacity-50"></i></div>
+                            <p class="font-mono text-lg tracking-widest mb-1 text-shadow">4000 8888 9999 0000</p>
+                            <div class="flex justify-between items-end"><span class="text-xs font-bold text-blue-200">VALID THRU 12/28</span><i class="fab fa-cc-mastercard text-3xl opacity-90"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">Nova Preferred</h3>
+                    <p class="text-gray-500 mb-6">Maximize your travel and dining.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> 3x Points on Travel & Dining</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> $200 Sign-up Bonus</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> $95 Annual Fee</li>
+                    </ul>
+                    <button onclick="alert('Online applications are currently disabled. Please visit your nearest Nova Bank branch to apply.')" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition">Visit Branch to Apply</button>
+                </div>
+            </div>
+
+            <!-- Elite Card -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="bg-gray-50 h-56 flex items-center justify-center p-4">
+                    <!-- Gold Card (Expensive/Elite) -->
+                    <div class="w-72 h-44 bg-gradient-to-br from-yellow-300 via-yellow-500 to-yellow-600 rounded-xl shadow-2xl relative p-6 text-yellow-900 flex flex-col justify-between transform transition hover:scale-105 duration-300 border border-yellow-400">
+                        <div class="absolute inset-0 bg-white opacity-10 rounded-xl" style="background-image: radial-gradient(circle at 50% 0, rgba(255,255,255,0.4), transparent 70%);"></div>
+                        <div class="relative z-10 flex justify-between items-start">
+                            <div class="flex items-center gap-2"><i class="fas fa-university text-lg"></i><span class="font-bold tracking-widest text-sm">NOVA RESERVE</span></div>
+                            <i class="fas fa-crown text-yellow-800"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex gap-2 mb-2"><div class="w-10 h-8 bg-yellow-200 rounded-md border border-yellow-600/30"></div><i class="fas fa-wifi rotate-90 opacity-50"></i></div>
+                            <p class="font-mono text-lg tracking-widest mb-1 font-bold">4000 9999 7777 1111</p>
+                            <div class="flex justify-between items-end"><span class="text-xs font-bold">ELITE MEMBER</span><i class="fab fa-cc-amex text-3xl opacity-80"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">Nova Reserve</h3>
+                    <p class="text-gray-500 mb-6">Luxury travel benefits.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> Airport Lounge Access</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> $300 Travel Credit</li>
+                        <li class="flex gap-2"><i class="fas fa-check text-green-500"></i> $550 Annual Fee</li>
+                    </ul>
+                    <button onclick="alert('Online applications are currently disabled. Please visit your nearest Nova Bank branch to apply.')" class="w-full border-2 border-gray-800 text-gray-800 font-bold py-2 rounded-lg hover:bg-gray-50 transition">Visit Branch to Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
